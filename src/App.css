@@ -856,4 +856,12 @@ body{
   .product-detail .details .description {
     width: auto;
   }
+ 
+  .cart .cart-items .cart-item .details {
+    font-size: 11px;
+  }
+
+  .cart-details{
+    font-size: 12px;
+  }
 }
