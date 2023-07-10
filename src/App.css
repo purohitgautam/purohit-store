@@ -93,7 +93,6 @@ body{
 .feature-products,
 .product-detail,
 .listview,
-.product-detail .service,
 .product-detail .image,
 .product-detail .service div,
 .footer,
@@ -254,6 +253,8 @@ body{
 }
 
 .product-detail .service{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   gap: 20px;
 }
 
@@ -820,6 +821,11 @@ body{
   .listview .details .name{
     font-size: 16px;
   }
+
+  .product-detail .service{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -829,5 +835,25 @@ body{
 
   .listview-icon{
     align-items: center;
+  }
+
+  .contact-form form input{
+    width: 200px;
+  }
+
+  .footer-description {
+    width: auto;
+  }
+
+  .footer-subscribe input{
+    width: 95%;
+  }
+
+  .product-detail .image .all-images .all-image {
+    width: 50px;
+  }
+
+  .product-detail .details .description {
+    width: auto;
   }
 }
