@@ -603,7 +603,7 @@ body{
     gap: var(--hamburger-gap);
     width: max-content;
     position: absolute;
-    top: var(--hamburger-margin);
+    top: 24px;
     right: var(--hamburger-margin);
     z-index: 2;
     cursor: pointer;
