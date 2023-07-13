@@ -8,11 +8,11 @@ export default function Filter() {
       <input type="search" id='search' onChange={e => filterDispatch({type:'FILTER_BY_SEARCH', payload: e.target.value})} />
         <div className="lowest">
           <span>Lowest</span>
-          <input type="radio" name="sort" id="lowest" onChange={()=>filterDispatch({type: 'SORT_BY_PRICE', payload: 'lowest'})} checked={sort === 'lowest' ? true : false} />
+          <input type="radio" name="sort" id="lowest" onChange={()=>filterDispatch({type: 'SORT_BY_PRICE', payload: 'lowest'})} />
         </div>
         <div className="highest">
           <span>highest</span>
-          <input type="radio" name="sort" id="highest" onChange={()=>filterDispatch({type: 'SORT_BY_PRICE', payload: 'highest'})} checked={sort === 'highest' ? true : false} />
+          <input type="radio" name="sort" id="highest" onChange={()=>filterDispatch({type: 'SORT_BY_PRICE', payload: 'highest'})} />
         </div>
         <select onChange={(e)=> filterDispatch({type: 'FILTER_BY_CATEGORY', payload:e.target.value})}>
           <option value="categories">categories (All)</option>
