@@ -2,7 +2,7 @@ import React from 'react'
 import { useProductContext } from '../contex/ProductContex'
 
 export default function Filter() {
-    const {filterState : { sort }, filterDispatch} = useProductContext()
+    const {filterDispatch} = useProductContext()
   return (
     <div className='filters'>
       <input type="search" id='search' onChange={e => filterDispatch({type:'FILTER_BY_SEARCH', payload: e.target.value})} />
